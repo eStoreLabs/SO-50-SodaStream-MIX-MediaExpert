@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "HurmeGeometricSans3";
+  src: local("HurmeGeometricSans3"),
+  url("../fonts/HurmeGeometricSans3-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "HurmeGeometricSans3";
+  src: local("HurmeGeometricSans3"),
+  url("../fonts/HurmeGeometricSans3-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "HurmeGeometricSans3";
+  src: local("HurmeGeometricSans3"),
+  url("../fonts/HurmeGeometricSans3-Black.woff") format("woff");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "HurmeGeometricSans3";
+  src: local("HurmeGeometricSans3"),
+  url("../fonts/HurmeGeometricSans3-Light.woff2") format("woff2");
+  font-weight: 300;
+}
+
+// set up variables
+$font-regular: "HurmeGeometricSans3", sans-serif;
+
+$fs-base: 20px;
+$fs-header: 32px;
+
+$px-S: 8px;
+$px-M: 16px;
+$px-L: 24px;
+$px-XL: 32px;
+$px-XXL: 48px;
+$px-XXXL: 64px;
+
+$color-main: #eeeae5;
+$color-bg: #13294b;
+$color-light-bg: #7FBFF5;
+$color-accent: #005bab;
+
+$media-breakpoint-sm: 576px;
+$media-breakpoint-md: 768px;
+$media-breakpoint-lg: 992px;
+$media-breakpoint-xl: 1200px;
+
+#es-rc #es-rc-content {
+  font-family: $font-regular;
+  font-weight: 400;
+  font-size: $fs-base;
+  line-height: 1.2;
+  color: $color-main;
+  background-color: $color-bg;
+  max-width: 990px;
+  margin: auto;
+  container: es-rc-content / inline-size;
+  overflow: hidden;
+
+  ::-moz-selection {
+    background-color: $color-main;
+    color: $color-bg;
+  }
+
+  ::selection {
+    background-color: $color-main;
+    color: $color-bg;
+  }
+
+  // minimal css reset
+
+  * {
+    box-sizing: border-box;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  button {
+    display: block;
+  }
+
+  .es-desktop {
+    display: flex;
+    position: relative;
+  }
+
+  .es-kv {
+    display: flex;
+
+    & > * {
+      flex: 1;
+    }
+
+    &__kinds {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24.5px;
+
+      &-item {
+        &-image {
+          height: 91px;
+          width: 91px;
+        }
+
+        &-text {
+          margin-top: 16px;
+          display: inline-block;
+          width: 100%;
+
+          text-align: center;
+          font-size: 17px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .es-gas-and-mix {
+    &__section-1 {
+      display: flex;
+      position: relative;
+      right: -35px;
+
+      &-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &-title {
+          font-size: 54px;
+          font-weight: 700;
+        }
+
+        &-text {
+          margin-top: 50px;
+          font-size: 36px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    &__section-2 {
+      padding: 42px 48px 79px 48px;
+      text-align: center;
+
+      &-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &-text {
+          font-size: 20px;
+        }
+
+        &-title {
+          margin: 35px 0;
+          font-size: 23px;
+          font-weight: 700;
+        }
+
+        &-subtitle {
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .es-assets-mix {
+    background-color: $color-main;
+
+    &__content {
+      display: flex;
+      color: $color-bg;
+
+      &-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+}
