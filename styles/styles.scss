@@ -182,16 +182,239 @@ $media-breakpoint-xl: 1200px;
   }
 
   .es-assets-mix {
-    background-color: $color-main;
+    background-color: #fff;
 
     &__content {
+      padding-top: 78px;
+      padding-bottom: 78px;
       display: flex;
       color: $color-bg;
 
+      &-image {
+        margin-top: -125px;
+        margin-left: -115px;
+      }
+
       &-description {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        padding-right: 30px;
+        padding-left: 17px;
+        font-size: 18px;
+
+        &-title {
+          font-size: 36px;
+          font-weight: 700;
+          margin-bottom: 18px;
+        }
+
+        &-text-1 {
+          font-weight: 400;
+        }
+
+        &-text-2 {
+          padding-left: 22px;
+          font-weight: 700;
+        }
+
+        &-text-3 {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .es-assets-mix-func-and-style {
+    position: relative;
+    display: flex;
+    gap: 30px;
+
+    &__description {
+      padding-top: 67px;
+      padding-left: 40px;
+
+      &-title {
+        font-size: 36px;
+        font-weight: 700;
+      }
+
+      &-text {
+        margin-top: 28px;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+
+    &__mix-date-img {
+      margin-right: -160px;
+      margin-top: -70px;
+    }
+
+    &__sodastream-img {
+      margin-top: 22px;
+      padding: 0 146px;
+    }
+  }
+
+  .es-assets-mix-func-and-style::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  }
+
+  .es-assets-mix-gas-and-taste {
+    display: flex;
+    gap: 6px;
+    background-color: $color-main;
+  }
+
+  .es-sodastream-mix {
+    color: $color-bg;
+    background-color: $color-main;
+    padding: 48px 42px 58px 42px;
+    font-size: 18px;
+    font-weight: 400;
+
+    &__title {
+      margin: 0;
+      color: $color-bg;
+      font-size: 36px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    &__text-1 {
+      margin-top: 26px;
+    }
+
+    &__text-2 {
+      font-weight: 700;
+      padding-left: 19.69px;
+
+      &--regular {
+        font-weight: 400;
+      }
+    }
+
+    &__text-3 {
+    }
+
+    &__text-4 {
+      font-weight: 700;
+      padding-left: 19.69px;
+
+      &--regular {
+        font-weight: 400;
+      }
+    }
+
+    &__video {
+      margin-top: 25px;
+    }
+  }
+
+  .es-worth-to-know {
+    padding: 82px 44px 106px 44px;
+
+    &__title {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    &__text {
+      margin-top: 52px;
+    }
+  }
+
+  .es-for-everyone {
+    background-color: $color-main;
+    color: $color-bg;
+    padding-bottom: 58px;
+
+    &__content {
+      display: flex;
+
+      &-description {
+        padding: 64px 47px;
+
+        &-title {
+          font-size: 36px;
+          font-weight: 700;
+        }
+
+        &-text {
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+    }
+  }
+
+  .es-open-sodastream-tastes {
+    display: flex;
+
+    & > * {
+      width: 100%;
+    }
+
+    &__item {
+      padding: 39px 25.5px 75px 25.5px;
+      text-align: center;
+      font-size: 18px;
+
+      & > img {
+        width: 148px;
+        margin-bottom: 32px;
+      }
+    }
+
+    &__item:nth-child(1) {
+      color: #fff;
+      background-color: #0a2042;
+    }
+
+    &__item:nth-child(2) {
+      color: $color-bg;
+      background-color: #f6c641
+    }
+
+    &__item:nth-child(3) {
+      color: #fff;
+      background-color: #e25d5f;
+    }
+  }
+
+  .es-footer {
+    &__section-1-sodastreams {
+      margin-top: 115px;
+      margin-bottom: -22px;
+    }
+
+    &__section-2 {
+      padding-top: 84px;
+      padding-bottom: 75px;
+      background-color: $color-main;
+
+      &-title {
+        text-align: center;
+        font-size: 27px;
+        font-weight: 700;
+        color: $color-bg;
+      }
+
+      &-logo {
+        margin-top: 27px;
+        width: 183px;
       }
     }
   }
