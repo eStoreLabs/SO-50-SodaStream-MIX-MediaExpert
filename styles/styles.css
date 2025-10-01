@@ -58,6 +58,7 @@
 }
 #es-rc #es-rc-content .es-kv {
   display: flex;
+  display: none;
 }
 #es-rc #es-rc-content .es-kv > * {
   flex: 1;
@@ -357,7 +358,15 @@
   margin-top: 27px;
   width: 183px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  #es-rc #es-rc-content .es-assets-mix-gas-and-taste__image-container-text-title {
+    font-size: 36px;
+  }
+  #es-rc #es-rc-content .es-assets-mix-gas-and-taste__image-container-text-subtitle {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 998px) {
   #es-rc #es-rc-content .es-gas-and-mix__section-1-description-title {
     margin-top: 50px;
     font-size: 36px;
