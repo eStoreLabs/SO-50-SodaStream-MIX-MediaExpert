@@ -481,4 +481,71 @@ $media-breakpoint-xl: 1200px;
       }
     }
   }
+
+  @media screen and (min-width: 650px) {
+  }
+  @media screen and (min-width: 768px) {
+    .es-gas-and-mix__section-1-description-title {
+      margin-top: 50px;
+      font-size: 36px;
+      text-align: center;
+    }
+
+    .es-gas-and-mix__section-1-description-text {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .es-gas-and-mix__section-1 {
+      position: static;
+      flex-direction: column;
+
+      img {
+        width: 500px;
+      }
+    }
+
+    .es-assets-mix__content {
+      align-items: center;
+      flex-direction: column;
+
+      &-image {
+        width: 500px;
+        margin: 0 0 42px 0;
+      }
+    }
+
+    .es-assets-mix-func-and-style__section-1 {
+      padding-top: 78px;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      &__mix-date-night-image {
+        width: 500px;
+        margin: 0;
+      }
+    }
+
+    .es-for-everyone__content {
+      padding-top: 78px;
+      flex-direction: column;
+
+      &-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-image {
+          height: 500px;
+          width: 500px;
+          margin: unset;
+        }
+
+        &-functionalities {
+          margin-left: unset;
+        }
+      }
+    }
+  }
 }
