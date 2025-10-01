@@ -25,7 +25,7 @@
   line-height: 1.2;
   color: #eeeae5;
   background-color: #13294b;
-  max-width: 990px;
+  max-width: 1000px;
   margin: auto;
   container: es-rc-content/inline-size;
   overflow: hidden;
@@ -154,7 +154,6 @@
   font-weight: 400;
 }
 #es-rc #es-rc-content .es-assets-mix-func-and-style {
-  position: relative;
   display: flex;
   gap: 30px;
 }
@@ -176,23 +175,46 @@
   margin-top: -70px;
 }
 #es-rc #es-rc-content .es-assets-mix-func-and-style__sodastream-img {
+  position: relative;
+  bottom: -12px;
+  z-index: 1;
   margin-top: 22px;
   padding: 0 146px;
 }
-#es-rc #es-rc-content .es-assets-mix-func-and-style::after {
+#es-rc #es-rc-content .es-assets-mix-gas-and-taste {
+  position: relative;
+  display: flex;
+  gap: 6px;
+  background-color: #eeeae5;
+}
+#es-rc #es-rc-content .es-assets-mix-gas-and-taste__image-container {
+  width: 100%;
+  position: relative;
+}
+#es-rc #es-rc-content .es-assets-mix-gas-and-taste__image-container-text {
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  text-align: center;
+}
+#es-rc #es-rc-content .es-assets-mix-gas-and-taste__image-container-text-title {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 700;
+}
+#es-rc #es-rc-content .es-assets-mix-gas-and-taste__image-container-text-subtitle {
+  font-size: 30px;
+  font-weight: 700;
+}
+#es-rc #es-rc-content .es-assets-mix-gas-and-taste::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -99.98px;
   left: 0;
   width: 100%;
   height: 100px;
   background-color: white;
   border-radius: 50% 50% 0 0/100% 100% 0 0;
-}
-#es-rc #es-rc-content .es-assets-mix-gas-and-taste {
-  display: flex;
-  gap: 6px;
-  background-color: #eeeae5;
 }
 #es-rc #es-rc-content .es-sodastream-mix {
   color: #13294b;
@@ -226,6 +248,8 @@
   font-weight: 400;
 }
 #es-rc #es-rc-content .es-sodastream-mix__video {
+  width: 100%;
+  height: 460px;
   margin-top: 25px;
 }
 #es-rc #es-rc-content .es-worth-to-know {
@@ -246,6 +270,31 @@
 }
 #es-rc #es-rc-content .es-for-everyone__content {
   display: flex;
+}
+#es-rc #es-rc-content .es-for-everyone__content-left-image {
+  width: 616px;
+  height: 616px;
+  margin-top: -70px;
+  margin-left: -120px;
+}
+#es-rc #es-rc-content .es-for-everyone__content-left-functionalities {
+  margin-left: 35px;
+  margin-top: -70px;
+  display: flex;
+  align-items: center;
+  gap: 24.5px;
+}
+#es-rc #es-rc-content .es-for-everyone__content-left-functionalities-item-image {
+  height: 99px;
+  width: 99px;
+}
+#es-rc #es-rc-content .es-for-everyone__content-left-functionalities-item-text {
+  margin-top: 16px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
 }
 #es-rc #es-rc-content .es-for-everyone__content-description {
   padding: 64px 47px;

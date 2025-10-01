@@ -58,7 +58,7 @@ $media-breakpoint-xl: 1200px;
   line-height: 1.2;
   color: $color-main;
   background-color: $color-bg;
-  max-width: 990px;
+  max-width: 1000px;
   margin: auto;
   container: es-rc-content / inline-size;
   overflow: hidden;
@@ -223,7 +223,6 @@ $media-breakpoint-xl: 1200px;
   }
 
   .es-assets-mix-func-and-style {
-    position: relative;
     display: flex;
     gap: 30px;
 
@@ -249,26 +248,54 @@ $media-breakpoint-xl: 1200px;
     }
 
     &__sodastream-img {
+      position: relative;
+      bottom: -12px;
+      z-index: 1;
+
       margin-top: 22px;
       padding: 0 146px;
     }
   }
 
-  .es-assets-mix-func-and-style::after {
+  .es-assets-mix-gas-and-taste {
+    position: relative;
+    display: flex;
+    gap: 6px;
+    background-color: $color-main;
+
+    &__image-container {
+      width: 100%;
+      position: relative;
+
+      &-text {
+        width: 100%;
+        position: absolute;
+        top: 30px;
+        text-align: center;
+
+        &-title {
+          font-size: 70px;
+          line-height: 70px;
+          font-weight: 700;
+        }
+
+        &-subtitle {
+          font-size: 30px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .es-assets-mix-gas-and-taste::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -99.98px;
     left: 0;
     width: 100%;
     height: 100px;
     background-color: white;
     border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-  }
-
-  .es-assets-mix-gas-and-taste {
-    display: flex;
-    gap: 6px;
-    background-color: $color-main;
   }
 
   .es-sodastream-mix {
@@ -312,6 +339,8 @@ $media-breakpoint-xl: 1200px;
     }
 
     &__video {
+      width: 100%;
+      height: 460px;
       margin-top: 25px;
     }
   }
@@ -337,6 +366,40 @@ $media-breakpoint-xl: 1200px;
 
     &__content {
       display: flex;
+
+      &-left {
+        &-image {
+          width: 616px;
+          height: 616px;
+          margin-top: -70px;
+          margin-left: -120px;
+        }
+
+        &-functionalities {
+          margin-left: 35px;
+          margin-top: -70px;
+          display: flex;
+          align-items: center;
+          gap: 24.5px;
+
+          &-item {
+            &-image {
+              height: 99px;
+              width: 99px;
+            }
+
+            &-text {
+              margin-top: 16px;
+              display: inline-block;
+              width: 100%;
+
+              text-align: center;
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
 
       &-description {
         padding: 64px 47px;
