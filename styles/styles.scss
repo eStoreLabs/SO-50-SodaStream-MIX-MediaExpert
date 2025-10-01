@@ -223,42 +223,53 @@ $media-breakpoint-xl: 1200px;
   }
 
   .es-assets-mix-func-and-style {
-    display: flex;
-    gap: 30px;
+    position: relative;
 
-    &__description {
-      padding-top: 67px;
-      padding-left: 40px;
+    &__section-1 {
+      display: flex;
+      gap: 30px;
 
-      &-title {
-        font-size: 36px;
-        font-weight: 700;
+      &-description {
+        padding-top: 67px;
+        padding-left: 40px;
+
+        &-title {
+          font-size: 36px;
+          font-weight: 700;
+        }
+
+        &-text {
+          margin-top: 28px;
+          font-size: 18px;
+          font-weight: 400;
+        }
       }
 
-      &-text {
-        margin-top: 28px;
-        font-size: 18px;
-        font-weight: 400;
+      &__mix-date-night-image {
+        margin-right: -160px;
+        margin-top: -70px;
       }
     }
 
-    &__mix-date-img {
-      margin-right: -160px;
-      margin-top: -70px;
-    }
-
-    &__sodastream-img {
+    &__section-2-sodastream-image {
       position: relative;
-      bottom: -12px;
-      z-index: 1;
+      bottom: -110px;
 
       margin-top: 22px;
       padding: 0 146px;
     }
   }
 
+  .es-assets-mix-func-and-style::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  }
+
   .es-assets-mix-gas-and-taste {
-    position: relative;
     display: flex;
     gap: 6px;
     background-color: $color-main;
@@ -285,17 +296,6 @@ $media-breakpoint-xl: 1200px;
         }
       }
     }
-  }
-
-  .es-assets-mix-gas-and-taste::before {
-    content: "";
-    position: absolute;
-    top: -99.98px;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-color: white;
-    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
   }
 
   .es-sodastream-mix {

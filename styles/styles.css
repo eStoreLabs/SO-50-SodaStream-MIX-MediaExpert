@@ -154,35 +154,44 @@
   font-weight: 400;
 }
 #es-rc #es-rc-content .es-assets-mix-func-and-style {
+  position: relative;
+}
+#es-rc #es-rc-content .es-assets-mix-func-and-style__section-1 {
   display: flex;
   gap: 30px;
 }
-#es-rc #es-rc-content .es-assets-mix-func-and-style__description {
+#es-rc #es-rc-content .es-assets-mix-func-and-style__section-1-description {
   padding-top: 67px;
   padding-left: 40px;
 }
-#es-rc #es-rc-content .es-assets-mix-func-and-style__description-title {
+#es-rc #es-rc-content .es-assets-mix-func-and-style__section-1-description-title {
   font-size: 36px;
   font-weight: 700;
 }
-#es-rc #es-rc-content .es-assets-mix-func-and-style__description-text {
+#es-rc #es-rc-content .es-assets-mix-func-and-style__section-1-description-text {
   margin-top: 28px;
   font-size: 18px;
   font-weight: 400;
 }
-#es-rc #es-rc-content .es-assets-mix-func-and-style__mix-date-img {
+#es-rc #es-rc-content .es-assets-mix-func-and-style__section-1__mix-date-night-image {
   margin-right: -160px;
   margin-top: -70px;
 }
-#es-rc #es-rc-content .es-assets-mix-func-and-style__sodastream-img {
+#es-rc #es-rc-content .es-assets-mix-func-and-style__section-2-sodastream-image {
   position: relative;
-  bottom: -12px;
-  z-index: 1;
+  bottom: -110px;
   margin-top: 22px;
   padding: 0 146px;
 }
+#es-rc #es-rc-content .es-assets-mix-func-and-style::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-radius: 50% 50% 0 0/100% 100% 0 0;
+}
 #es-rc #es-rc-content .es-assets-mix-gas-and-taste {
-  position: relative;
   display: flex;
   gap: 6px;
   background-color: #eeeae5;
@@ -205,16 +214,6 @@
 #es-rc #es-rc-content .es-assets-mix-gas-and-taste__image-container-text-subtitle {
   font-size: 30px;
   font-weight: 700;
-}
-#es-rc #es-rc-content .es-assets-mix-gas-and-taste::before {
-  content: "";
-  position: absolute;
-  top: -99.98px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background-color: white;
-  border-radius: 50% 50% 0 0/100% 100% 0 0;
 }
 #es-rc #es-rc-content .es-sodastream-mix {
   color: #13294b;
