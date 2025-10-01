@@ -484,36 +484,224 @@ $media-breakpoint-xl: 1200px;
   }
 
   @media screen and (max-width: 650px) {
-  }
+    .es-for-everyone__content-left-functionalities {
+      margin-top: 32px;
+      flex-direction: column;
+    }
 
-  @media screen and (max-width: 768px) {
+    .es-footer__section-2-title {
+      font-size: 14px;
+    }
+
+    .es-assets-mix-func-and-style__section-1-description {
+      padding: 42px 48px;
+    }
+
+    .es-sodastream-mix__title,
+    .es-assets-mix-func-and-style__section-1-description-title,
+    .es-assets-mix__content-description-title,
+    .es-worth-to-know__title,
+    .es-for-everyone__content-description-title,
+    .es-for-everyone__title {
+      font-size: 28px;
+    }
+
+    .es-assets-mix-func-and-style::after {
+      height: 50px;
+    }
+
+    .es-gas-and-mix__section-1-description {
+      &-title {
+        font-size: 22px;
+      }
+
+      &-subtitle {
+        font-size: 18px;
+      }
+    }
+
+    .es-open-sodastream-tastes {
+      flex-direction: column;
+    }
+
     .es-assets-mix-gas-and-taste__image-container-text {
       &-title {
-        font-size: 36px
+        font-size: 20px;
+      }
+
+      &-subtitle {
+        font-size: 14px;
+      }
+    }
+
+    .es-gas-and-mix__section-1 {
+      position: static;
+      flex-direction: column;
+
+      &-description {
+        &-title {
+          margin-top: 50px;
+          font-size: 28px;
+          text-align: center;
+        }
+
+        &-text {
+          font-size: 24px;
+          text-align: center;
+          margin-bottom: 50px;
+        }
+      }
+
+      img {
+        width: 100%;
+        padding: 0 30px;
+      }
+    }
+
+    .es-assets-mix__content {
+      align-items: center;
+      flex-direction: column;
+
+      &-image {
+
+        width: 100%;
+        padding: 0 30px;;
+        margin: 0 0 42px 0;
+      }
+    }
+
+    .es-assets-mix-func-and-style__section-1 {
+      padding-top: 78px;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      &__mix-date-night-image {
+
+        width: 100%;
+        padding: 0 30px;;
+        margin: 0;
+      }
+    }
+
+    .es-for-everyone__content {
+      padding-top: 78px;
+      flex-direction: column;
+
+      &-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-image {
+          height: inherit;
+          width: 100%;
+
+          padding: 0 30px;;
+          margin: unset;
+        }
+
+        &-functionalities {
+          margin-left: unset;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 651px) and (max-width: 768px) {
+    .es-assets-mix-gas-and-taste__image-container-text {
+      &-title {
+        font-size: 28px
       }
 
       &-subtitle {
         font-size: 18px
       }
     }
-  }
-
-  @media screen and (max-width: 998px) {
-    .es-gas-and-mix__section-1-description-title {
-      margin-top: 50px;
-      font-size: 36px;
-      text-align: center;
-    }
-
-    .es-gas-and-mix__section-1-description-text {
-      font-size: 24px;
-      text-align: center;
-      margin-bottom: 50px;
-    }
 
     .es-gas-and-mix__section-1 {
       position: static;
       flex-direction: column;
+
+      &-description {
+        &-title {
+          margin-top: 50px;
+          font-size: 36px;
+          text-align: center;
+        }
+
+        &-text {
+          font-size: 24px;
+          text-align: center;
+          margin-bottom: 50px;
+        }
+      }
+
+      img {
+        width: 500px;
+      }
+    }
+
+    .es-assets-mix__content {
+      align-items: center;
+      flex-direction: column;
+
+      &-image {
+        width: 500px;
+        margin: 0 0 42px 0;
+      }
+    }
+
+    .es-assets-mix-func-and-style__section-1 {
+      padding-top: 78px;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      &__mix-date-night-image {
+        width: 500px;
+        margin: 0;
+      }
+    }
+
+    .es-for-everyone__content {
+      padding-top: 78px;
+      flex-direction: column;
+
+      &-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-image {
+          height: 500px;
+          width: 500px;
+          margin: unset;
+        }
+
+        &-functionalities {
+          margin-left: unset;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 998px) {
+    .es-gas-and-mix__section-1 {
+      position: static;
+      flex-direction: column;
+
+      &-description {
+        &-title {
+          margin-top: 50px;
+          font-size: 36px;
+          text-align: center;
+        }
+
+        &-text {
+          font-size: 24px;
+          text-align: center;
+          margin-bottom: 50px;
+        }
+      }
 
       img {
         width: 500px;
