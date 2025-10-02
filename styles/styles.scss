@@ -622,6 +622,7 @@ $media-breakpoint-xl: 1200px;
     .es-assets-mix-gas-and-taste__image-container-text {
       &-title {
         font-size: 28px;
+        line-height: 28px;
       }
 
       &-subtitle {
@@ -732,7 +733,8 @@ $media-breakpoint-xl: 1200px;
 
     .es-assets-mix-gas-and-taste__image-container-text {
       &-title {
-        font-size: 28px
+        font-size: 28px;
+        line-height: 28px;
       }
 
       &-subtitle {
