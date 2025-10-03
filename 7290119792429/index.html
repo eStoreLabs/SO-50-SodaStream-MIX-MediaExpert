@@ -26,6 +26,8 @@
     }
     #es-rc #es-rc-content ol {
         list-style: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
     #es-rc #es-rc-content img {
         max-width: none;
@@ -65,7 +67,14 @@
         display: block;
     }
     #es-rc #es-rc-content .es-kv {
-        display: none;
+        display: flex;
+        gap: 50px;
+    }
+    #es-rc #es-rc-content .es-kv__mix {
+        display: flex;
+    }
+    #es-rc #es-rc-content .es-kv__mix-video {
+        height: 220px;
     }
     #es-rc #es-rc-content .es-kv > * {
         flex: 1;
@@ -82,11 +91,14 @@
     }
     #es-rc #es-rc-content .es-kv__kinds-item-text {
         margin-top: 16px;
+
         display: inline-block;
         width: 100%;
+
         text-align: center;
         font-size: 17px;
         font-weight: 700;
+        white-space: nowrap;
     }
     #es-rc #es-rc-content .es-gas-and-mix__section-1 {
         display: flex;
@@ -409,6 +421,12 @@
         }
     }
     @media screen and (max-width: 650px) {
+        .es-kv__mix {
+            justify-content: center;
+        }
+        #es-rc #es-rc-content .es-kv {
+            flex-direction: column;
+        }
         #es-rc #es-rc-content .es-assets-mix-func-and-style__section-2-mobile {
             display: block;
         }
@@ -521,6 +539,12 @@
         }
     }
     @media (min-width: 651px) and (max-width: 768px) {
+        .es-kv__mix {
+            justify-content: center;
+        }
+        #es-rc #es-rc-content .es-kv {
+            flex-direction: column;
+        }
         #es-rc #es-rc-content .es-assets-mix-func-and-style__section-2-sodastream-image {
             bottom: -58px;
         }
@@ -696,10 +720,12 @@
 <div id="es-rc">
     <div id="es-rc-content">
         <div class="es-kv">
-            <div>
-                <img class="es-kv__mix"
-                     src="./img/kv_mix.png"
-                     alt="sodastream header">
+            <div class="es-kv__mix">
+                <video class="es-kv__mix-video" src="./img/MEX%20220p.mp4"
+                       autoplay
+                       loop
+                       muted
+                       playsinline></video>
             </div>
             <div class="es-kv__kinds">
                 <div class="es-kv__kinds-item">
@@ -925,6 +951,8 @@
                     odchyl
                     zbiornik przelewowy w swoją stronę.</span><br/><br/>
                 </li>
+                <li>Zamontuj butelkę w saturatorze: <span class="es-sodastream-mix__text-2--regular">Włóż szyjkę butelki do mechanismu Snap-Lock, a następnie dociśnij ją do góry i popchnij w kierunku saturatora. Przekręć pokętło blokady w prawo, aby ją zablokować.</span><br/><br/>
+                </li>
                 <li>Nagazuj napój: <span class="es-sodastream-mix__text-2--regular">Naciśnij przycisk gazowania, przytrzymaj przez 1 sekundę i zwolnij. Powtarzaj te
                     czynności, aż uzyskasz idealny poziom nagazowania napoju - jeśli naciśniesz przycisk 1–2 razy,
                     uzyskasz lekko gazowany
@@ -936,7 +964,7 @@
                     aby
                     pozbyć się jej nadmiaru. Powoli przekręć pokrętło w lewo do pozycji I, aby uwolnić gaz. Obserwuj
                     podnoszący
-                    się poziom piany. Kiedy nieco opadnie, przekręć pokrętło do pozycji II i ponownie poczekaj aż
+                    się poziom piany. Kiedy nieco opadnie, przekręć pokrętło do pozycji II i poczekaj aż
                     całkiem
                     opadnie.</span>
                 </li>
@@ -955,15 +983,11 @@
                     woda pamiętaj o przepłukaniu dyszy gazującej, zbiornika przelewowego, tacki ociekowej i jej pokrywy.</span>
                 </li>
             </ol>
-            <iframe
+            <iframe src="https://www.youtube.com/embed/EWUyeIbWWxI?rel=0&modestbranding=1&showinfo=0"
                     class="es-sodastream-mix__video"
-                    src=""
                     title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen>
-            </iframe>
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen=""></iframe>
         </div>
 
         <div class="es-worth-to-know">
